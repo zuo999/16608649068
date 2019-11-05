@@ -1,17 +1,25 @@
 #include <stdio.h>
 int main(void)
 {
-    int N;
-    printf("Enter N:\n");
-    scanf("%d", &N);
-    if ((N % 4 == 0 && N % 100 != 0) || (N % 400 == 0))
-    {
-        printf("yes \n");
+    int n;
+    printf("Enter n:\n");
+    scanf("%d", &n);
+    if(n<60){
+        printf("E\n");
     }
-    else
-    {
-        printf("no \n");
+    else if(n<70){
+        printf("D\n");
     }
-
+    else if(n<80){
+        printf("C\n");
+    }
+    else if(n<90){
+        printf("B\n");
+    }
+    else{
+        printf("A\n");
+    }
     return 0;
 }
+    
+    
