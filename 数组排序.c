@@ -3,7 +3,7 @@
 void sort(int x[],int n);
 int main(void)
 {
-    int a[len],max,i;
+    int a[len],i;
     for(i=0;i<len;i++)
     {
         scanf("%d",&a[i]);
@@ -11,7 +11,7 @@ int main(void)
     sort(a,len);
     for(i=0;i<len;i++)
     {
-    printf("%5d",max);
+    printf("%5d",a[i]);
     }
     return 0;
 }
